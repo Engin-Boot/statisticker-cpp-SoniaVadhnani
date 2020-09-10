@@ -1,5 +1,17 @@
 #include <vector>
 
 namespace Statistics {
-    Stats ComputeStatistics(const std::vector<___>& );
+
+     class Stats
+    {
+    public:
+        float average;
+        float min;
+        float max;
+
+        Stats();
+        Stats(float avg, float min, float max);
+    };
+
+    Stats ComputeStatistics(const std::vector<float>& );
 }
